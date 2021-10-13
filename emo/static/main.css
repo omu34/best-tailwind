@@ -1,0 +1,51 @@
+@tailwind base;
+@taiwind components;
+@tailwind utilities;
+
+.active {
+    display: block;
+}
+
+
+@layer components {
+    .btn {
+        @apply px-4 py-2 bg-blue-600 text-white rounded;
+
+        /* nav */
+        .nav-items {
+            @apply mx-3 transition duration-500 hover: text-gray-200;
+        }
+
+        .hamburger-slice {
+            @apply w-full h-1 bg-white rounded-full transition duration-500 ease-in-out;
+        }
+
+        .sidenav-items {
+            @apply my-20 ease-in-out hover: text-gray-200;
+            transition: transform 0.3s, opacity 0.3s, color 0.5s;
+        }
+
+        .menu-a {
+            @apply text-gray-800 hover: text-overlay no-underline text-2x;
+        }
+
+        /* video */
+        :root {
+            --overlay: '#03a9fa';
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .showcase.active {
+            @apply right-72;
+        }
+
+        .menu-a {
+            @apply text-gray-800 hover: text-overlay no-underline text-2x;
+        }
+
+
+        .active {
+            display: block;
+        }
+    }
+}
