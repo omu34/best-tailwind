@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "dev": "vite",    
+  "scripts": {   
+    "dev":"npx tailwindcss --output assets/css/tailwind.css --watch",    
+    "build":"npx tailwindcss --output assets/css/tailwind.css --minify",    
     "build-css":"tailwindcss build -i src/styles.css -o public/style.css"
     
   },

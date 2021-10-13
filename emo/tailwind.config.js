@@ -1,10 +1,22 @@
 module.exports = {
   mode:"jit",
   purge: [ 
-    "./tempates/**/*.html"
+    "*.html"
   ],
   darkMode: false, // or 'media' or 'class'
+  corePlugins:{
+    preflight:false,
+  },
+  prefix:'tw-',
+  important:true,
   theme: {
+    screens:{
+      sm:'737px',
+      md:'841px',
+      lg:'961px',
+      xl:'1281px',
+      '2xl':'1681px',
+    },
     extend: {
       colors:{
         overlay:'#03a9fa',
