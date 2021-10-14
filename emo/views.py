@@ -32,7 +32,7 @@ def market_page():
 
         
         
-    return render_template('market.html')
+    return render_template('base.html')
 
 # @views.route('/delete-note', methods=['POST'])
 # def delete_note():

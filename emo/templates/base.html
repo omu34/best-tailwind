@@ -15,7 +15,7 @@
     <title>{%block head%}tailwind{%endblock%}</title>
     <title>mine</title>
 </head>
-<body class="antialiased min-h-screen relative lg:flex" x-data="{open:false}">
+<body class="antialiased max-h-screen relative lg:flex" x-data="{open:false}">
         <nav class="absolute duration-200 inset-0 transform lg:transform-none lg:opacity-100 lg:relative z-10 w-64 bg-indigo-900 text-white h-screen p-3"
             :class="{'translate-x-0 ease-in opacity-100':open===true, '-translate-x-full ease-out opacity-0':open===false}">
             <div class="flex justify-between">
