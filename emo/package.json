@@ -1,7 +1,7 @@
 {  "name": "tailwind",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {   
     "dev":"npx tailwindcss --output assets/css/tailwind.css --watch",    
     "build":"npx tailwindcss --output assets/css/tailwind.css --minify",    
